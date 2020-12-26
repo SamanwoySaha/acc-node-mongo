@@ -3,11 +3,6 @@ const { Schema } = mongoose;
 mongoose.Promise = global.Promise;
 
 const courseSchema = new Schema({
-    id: {
-        type: Number,
-        unique: true,
-        trim: true,
-    },
     name: {
         type: String,
         unique: true,
